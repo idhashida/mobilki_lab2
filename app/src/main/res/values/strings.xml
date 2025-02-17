@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="txt1">Hello, Android!</string>
+    <string name="title" translatable="false">Timetable for HSE FE</string>
+    <string name="btn1" translatable="false">BUTTON1</string>
+    <string name="btn2" translatable="false">BUTTON2</string>
+    <string name="input_text" translatable="false">100000</string>
+    <string name="result" translatable="false">Result</string>
+</resources>
