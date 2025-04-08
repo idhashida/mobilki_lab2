@@ -1,5 +1,6 @@
 package org.hse.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,60 +32,26 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickButton1();
+                showStudent();
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickButton2();
+                showTeacher();
             }
         });
     }
 
-    private void clickButton1() {
-        String numberVal = editText.getText().toString();
-        if (numberVal.isEmpty()) {
-            numberVal = "0";
-        }
-
-        int count = Integer.parseInt(numberVal);
-        if (count < MIN_VALUE || count > MAX_VALUE) {
-            Toast.makeText(this, "Acceptable range [ " + MIN_VALUE + " - " + MAX_VALUE + " ]", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            list.add(i + 1);
-        }
-
-        int sum = list.stream().mapToInt(Integer::intValue).sum();
-        resultText.setText(String.format("Result1: " + sum));
+    private void showStudent() {
+        Intent intent = new Intent(this, StudentActivity.class);
+        startActivity(intent);
     }
 
-    private void clickButton2() {
-        String numberVal = editText.getText().toString();
-        if (numberVal.isEmpty()) {
-            numberVal = "0";
-        }
-
-        int count = Integer.parseInt(numberVal);
-        if (count < MIN_VALUE || count > MAX_VALUE) {
-            Toast.makeText(this, "Acceptable range [ " + MIN_VALUE + " - " + MAX_VALUE + " ]", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        long product = 1;
-        for (int i = 2; i <= count; i += 2) {
-            product *= i;
-            if (product < 0) {  /* Проверка на переполнение */
-                resultText.setText("The number is too large to calculate.");
-                return;
-            }
-        }
-        resultText.setText(String.format("Result2: " + product));
+    private void showTeacher() {
+        Intent intent = new Intent(this, TeacherActivity.class);
+        startActivity(intent);
     }
 }
 
