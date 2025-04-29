@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InnerText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+    <style name="InnerButton">
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/rectangle_button</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+</resources>

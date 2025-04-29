@@ -15,4 +15,14 @@
     <string name="logo" translatable="false">HSE Logo Image</string>
     <string name="get_table_stud" translatable="false">Расписание занятий для студентов</string>
     <string name="get_table_teach" translatable="false">Расписание занятий для преподавателя</string>
+    <string name="choose_group" translatable="false">Выберите группу:</string>
+    <string name="choose_teacher" translatable="false">Выберите преподавателя:</string>
+    <string name="timeNow" translatable="false">Сейчас:\t</string>
+    <string name="currStatus" translatable="false">Идет пара / Нет пар</string>
+    <string name="subject" translatable="false">Дисциплина</string>
+    <string name="cabinet" translatable="false">Кабинет</string>
+    <string name="corp" translatable="false">Корпус</string>
+    <string name="teacher" translatable="false">Преподаватель</string>
+    <string name="dayTable" translatable="false">РАСПИСАНИЕ\nНА ДЕНЬ</string>
+    <string name="weekTable" translatable="false">РАСПИСАНИЕ\nНА НЕДЕЛЮ</string>
 </resources>
